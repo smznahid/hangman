@@ -6,3 +6,4 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ## Usage Instructions
 - Firstly the computer will randomly select a word from a select list using the ```random``` module.
 - After the word is selected the user will be prompted to make a one character guess that is alphabetical.
+- Once the user has inputted a valid guess, the computer will then check the letter against its chosen word, to see if it is correct.
