@@ -21,3 +21,19 @@ class Hangman:
         self.num_lives = num_lives
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
+
+    def check_guess(self, guess):
+        '''
+        This method is used to check if the guess is within the word chosed by the computer.
+
+        Args:
+            guess (str): this is a single character guess that will be used to check if that character is in the word.
+        
+        Returns:
+            None.
+        '''
+        guess = guess.lower()
+        if guess in self.word:
+            print(f"Good guess! {guess} is in the word.")
+        else:
+            print(f"Sorry, {guess} is not in the word. Try again.")
