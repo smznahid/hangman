@@ -37,3 +37,26 @@ class Hangman:
             print(f"Good guess! {guess} is in the word.")
         else:
             print(f"Sorry, {guess} is not in the word. Try again.")
+    
+    def ask_for_input(self):
+        '''
+        This method is used to ask the user to give their guess and validates their guess to git the criterea that is needed for the game.
+
+        Returns:
+            None.
+        '''
+        while True:
+            guess = input("Guess: ")
+            if len(guess) != 1 or not guess.isalpha():
+                print("Invalid letter. Please, enter a single alphhabetical character")
+            elif guess in self.list_of_guesses:
+                print("You already tried that letter!")
+            else:
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
+                break
+
+
+if __name__ == "__main__":
+    hangman = Hangman(["apple", "kiwi", "pear", "strawberry", "tomato", "elderberry", "cherry"])
+    hangman.ask_for_input()
