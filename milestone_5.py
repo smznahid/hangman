@@ -81,6 +81,4 @@ def play_game(word_list):
 
 
 if __name__ == "__main__":
-#    hangman = Hangman(["apple", "kiwi", "pear", "strawberry", "tomato", "elderberry", "cherry"])
-#    hangman.ask_for_input()
-    help(Hangman)
+    play_game(word_list=["apple", "kiwi", "pear", "strawberry", "tomato", "elderberry", "cherry"])
