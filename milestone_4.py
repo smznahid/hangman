@@ -3,6 +3,10 @@ class Hangman:
     '''
     This class is used to create and play the classic game of Hangman.
 
+    Args:
+        word_list (list): this is the argument for which words the computer can choose from.
+        num_lives (int): this is the number of lives you can choose to have (default is 5)
+
     Attributes:
         word_list (list): this is a list of words that the computer will use to randomly select a word to guess.
         word (str): this is the word that the computer has chosen to be guessed.
