@@ -48,7 +48,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
  |      See help(Hangman) for a more accurate signature.
  |
  |  ask_for_input(self)
- |      This method is used to ask the user to give their guess and validates their guess to git the criterea that is needed for the game.
+ |      This method is used to ask the user to give their guess and validates their guess to fit the criterea that is needed for the game.
  |
  |      Returns:
  |          None.
